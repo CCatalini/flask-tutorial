@@ -1,6 +1,6 @@
 from flask import Flask
 from routes.user import user_bp
-from routes.contacts import contacts_bp
+from routes.contact import contacts_bp
 
 from utils.db import db
 

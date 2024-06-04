@@ -11,3 +11,11 @@ class Contact(db.Model):
         self.full_name = full_name
         self.email = email
         self.phone = phone
+
+    def serialize(self):
+        return {
+            'id': self.id,
+            'full_name': self.full_name,
+            'email': self.email,
+            'phone': self.phone
+        }
