@@ -1,15 +1,12 @@
 from flask import jsonify, request, Blueprint, Flask
-
-from models.contacts import Contact
 from service.contact import ContactService
-from utils.db import db
 
 contacts_bp = Blueprint('contacts_bp', __name__)
 
 
 @contacts_bp.route('/')
 def home():
-    return 'Contacts home'
+    return 'como anda la banda ;)'
 
 
 @contacts_bp.route('/new', methods=['POST'])
